@@ -1,0 +1,30 @@
+@value colors: './root.module.css';
+
+@value background-color-blue from colors;
+
+.promo {
+    height: calc(75vh - 70px);
+    background-color: background-color-blue;
+    width: 100%;
+}
+
+.promoWrapper {
+    /*outline: 1px solid black;*/
+    composes: wrapper from './root.module.css';
+    height: calc(75vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding: 50px;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 57%;
+}

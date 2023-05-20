@@ -1,0 +1,21 @@
+@value colors: './root.module.css';
+@value background-color-blue from colors;
+
+.header {
+    height: 70px;
+    background-color: background-color-blue;
+}
+
+.headerWrapper {
+    composes: wrapper from './root.module.css';
+    padding-top: 20px;
+}
+
+.nav {
+    width: max-content;
+    margin-left: auto;
+}
+
+.nav a:not(:last-child) {
+    margin-right: 10px;
+}
