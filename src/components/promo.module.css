@@ -15,10 +15,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .text {
-    padding: 50px;
+    margin-right: 50px;
 }
 
 .photo {
@@ -27,4 +28,22 @@
     height: 300px;
     object-fit: cover;
     object-position: 57%;
+}
+
+@media (max-width: 360px) {
+
+    .promoWrapper {
+        flex-direction: column;
+    }
+
+
+    .text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px;
+    }
 }

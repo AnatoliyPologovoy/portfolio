@@ -19,3 +19,9 @@
 .nav a:not(:last-child) {
     margin-right: 10px;
 }
+
+@media (max-width: 360px) {
+    .nav {
+        margin-right: auto;
+    }
+}

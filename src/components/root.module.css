@@ -1,7 +1,13 @@
 @value background-color-blue: #61dafb;
 
 .wrapper {
-    width: 80%;
+    width: 70%;
     margin: 0 auto 0 auto;
+}
+
+@media (max-width: 360px) {
+    .wrapper {
+        width: 320px;
+    }
 }
 
