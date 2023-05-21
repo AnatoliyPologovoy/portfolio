@@ -1,0 +1,90 @@
+@value colors: '../root.module.css';
+
+@value background-color-blue from colors;
+
+.works {
+    background-color: background-color-blue;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.mainWrapper {
+    composes: wrapper from '../root.module.css';
+}
+
+.worksWrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*work*/
+
+.workWrapper {
+    width: 350px;
+    outline: 1px solid black;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.picWrapper {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.picWrapper:hover .pic {
+    transform: scale(1.15);
+}
+
+.picWrapper:hover::before {
+    content: 'Смотреть';
+    display: block;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.pic {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transition: all 0.5s;
+}
+
+.title, .text {
+    align-self: flex-start;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 360px) {
+    .worksWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workWrapper {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .pic {
+        width: 200px;
+    }
+}

@@ -8,7 +8,7 @@ const skillName2 = 'CSS'
 const skillName3 = 'REACT'
 const skillDescription1 = 'Описание навыка'
 
-const Skills = () => {
+export const SkillsContainer = () => {
     return (
         <section className={cl.skills}>
             <div className={cl.mainWrapper}>
@@ -23,4 +23,3 @@ const Skills = () => {
     );
 };
 
-export default Skills;
