@@ -1,0 +1,53 @@
+@value colors: 'root.module.css';
+
+@value background-color-blue from colors;
+
+.contacts {
+    background-color: background-color-blue;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.mainWrapper {
+    composes: wrapper from 'root.module.css';
+
+}
+
+.form {
+    margin: 0 auto 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    border: 1px solid #999;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    margin-bottom: 30px;
+    /*outline: none;*/
+    border: 1px solid #999;
+    border-radius: 2px;
+    resize: none;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto 0 auto ;
+    padding: 10px;
+}
+
+@media (max-width: 360px) {
+    .form {
+        width: 300px;
+    }
+
+    .textarea {
+        margin-bottom: 20px;
+    }
+
+}

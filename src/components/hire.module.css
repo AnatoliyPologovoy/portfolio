@@ -1,0 +1,24 @@
+@value colors: 'root.module.css';
+
+@value background-color-blue from colors;
+
+.hire {
+    background-color: background-color-blue;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.mainWrapper {
+    composes: wrapper from 'root.module.css';
+}
+
+.button {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 20px 7px 20px;
+    background-color: gray;
+    display: block;
+    width: max-content;
+    margin: 0 auto 0 auto ;
+}

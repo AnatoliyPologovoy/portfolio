@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 /*work*/
@@ -25,6 +26,7 @@
     width: 350px;
     outline: 1px solid black;
     margin-bottom: 40px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,6 +38,7 @@
     height: 250px;
     position: relative;
     overflow: hidden;
+    display: block;
 }
 
 .picWrapper:hover .pic {
@@ -84,7 +87,7 @@
         margin-bottom: 20px;
     }
 
-    .pic {
-        width: 200px;
+    .picWrapper {
+        width: 300px;
     }
 }
