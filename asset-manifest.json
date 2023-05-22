@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.10cfb289.css",
+    "main.js": "/portfolio/static/js/main.7d5a9392.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/keksobooking.png": "/portfolio/static/media/keksobooking.ec6db16145da2779173b.png",
+    "static/media/myPhoto.jpg": "/portfolio/static/media/myPhoto.7ebecdc011c80debd13c.jpg",
+    "static/media/html.jpeg": "/portfolio/static/media/html.b757b1105a63ab582275.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.10cfb289.css.map": "/portfolio/static/css/main.10cfb289.css.map",
+    "main.7d5a9392.js.map": "/portfolio/static/js/main.7d5a9392.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10cfb289.css",
+    "static/js/main.7d5a9392.js"
+  ]
+}
