@@ -70,6 +70,7 @@
 }
 
 .title, .text {
+    background-color: chocolate;
     align-self: flex-start;
     padding: 0 10px 0 10px;
     margin-top: 10px;

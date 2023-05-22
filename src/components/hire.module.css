@@ -3,7 +3,8 @@
 @value background-color-blue from colors;
 
 .hire {
-    background-color: background-color-blue;
+    /*background-color: background-color-blue;*/
+    background-color: cadetblue;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -20,5 +21,5 @@
     background-color: gray;
     display: block;
     width: max-content;
-    margin: 0 auto 0 auto ;
+    margin: 0 auto;
 }

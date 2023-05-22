@@ -4,7 +4,8 @@
 
 .skills {
     /*height: calc(85vh);*/
-    background-color: background-color-blue;
+    /*background-color: background-color-blue;*/
+    background-color: cadetblue;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -17,6 +18,7 @@
 }
 
 .mainTitle {
+    background-color: chocolate;
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
@@ -30,16 +32,18 @@
 
 /*skill*/
 .skillWrapper {
-    width: 30%;
+    width: 150px;
     outline: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 
 }
 
 .title {
+    background-color: chocolate;
     margin-top: 0;
     margin-bottom: 20px;
 }

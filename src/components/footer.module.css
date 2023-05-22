@@ -3,7 +3,8 @@
 @value background-color-blue from colors;
 
 .footer {
-    background-color: background-color-blue;
+    /*background-color: background-color-blue;*/
+    background-color: cadetblue;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -15,7 +16,7 @@
 }
 
 .social {
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     width: 300px;
     display: flex;
     justify-content: space-between;

@@ -13,6 +13,9 @@
     composes: wrapper from 'root.module.css';
 
 }
+.title {
+    background-color: chocolate;
+}
 
 .form {
     margin: 0 auto 0 auto;

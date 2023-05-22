@@ -5,7 +5,7 @@ const Contacts = () => {
     return (
         <section className={cl.contacts}>
             <div className={cl.mainWrapper}>
-                <h1>Задать вопрос</h1>
+                <h1 className={cl.title}>Задать вопрос</h1>
                 <form action="#" className={cl.form}>
                     <input type={"text"} className={cl.formName}/>
                     <input type={"text"} className={cl.formEmail}/>
