@@ -11,7 +11,7 @@ const WorksContainer = () => {
     return (
         <section className={cl.works}>
             <div className={cl.mainWrapper}>
-                <h1>Мои работы</h1>
+                <h1 className={cl.mainTitle}>Мои работы</h1>
                 <div className={cl.worksWrapper}>
                     <Work title={workName1} img={workPic1} text={workDesc1} link={workLink1}/>
                     <Work title={workName1} img={workPic1} text={workDesc1} link={workLink1}/>

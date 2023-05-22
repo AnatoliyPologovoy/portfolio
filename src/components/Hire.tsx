@@ -6,7 +6,7 @@ const Hire = () => {
     return (
         <section className={cl.hire}>
             <div className={cl.mainWrapper}>
-                <h1>
+                <h1 className={cl.title}>
                     Для работы в офисе готов на релокацию в города:<br/>
                     Ростов-на-Дону, Воронеж, Краснодар, Москва
                 </h1>

@@ -20,6 +20,11 @@
     gap: 20px;
 }
 
+.mainTitle {
+    background-color: chocolate;
+
+}
+
 /*work*/
 
 .workWrapper {
