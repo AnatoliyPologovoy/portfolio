@@ -6,7 +6,7 @@ const Contacts = () => {
         <section className={cl.contacts}>
             <div className={cl.mainWrapper}>
                 <h1 className={cl.title}>Задать вопрос</h1>
-                <form action="#" className={cl.form}>
+                <form action="src/components/Contacts/Contacts#" className={cl.form}>
                     <input type={"text"} className={cl.formName}/>
                     <input type={"text"} className={cl.formEmail}/>
                     <textarea className={cl.textarea} rows={8}/>

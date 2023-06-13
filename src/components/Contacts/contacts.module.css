@@ -1,4 +1,4 @@
-@value colors: 'root.module.css';
+@value colors: '../root.module.css';
 
 @value background-color-blue from colors;
 
@@ -10,7 +10,7 @@
 }
 
 .mainWrapper {
-    composes: wrapper from 'root.module.css';
+    composes: wrapper from '../root.module.css';
 
 }
 .title {
@@ -44,7 +44,7 @@
     padding: 10px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 560px) {
     .form {
         width: 300px;
     }

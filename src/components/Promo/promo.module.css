@@ -1,4 +1,4 @@
-@value colors: './root.module.css';
+@value colors: '../root.module.css';
 
 @value background-color-blue from colors;
 
@@ -10,7 +10,7 @@
 
 .promoWrapper {
     /*outline: 1px solid black;*/
-    composes: wrapper from './root.module.css';
+    composes: wrapper from '../root.module.css';
     height: calc(85vh - 70px);
     display: flex;
     justify-content: center;
@@ -31,20 +31,19 @@
     object-position: 57%;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 560px) {
 
-    .promoWrapper {
-        flex-direction: column;
+    .photo {
+        width: 200px;
+        height: 200px;
     }
-
 
     .text {
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-    .photo {
-        width: 200px;
-        height: 200px;
+    .promoWrapper {
+        flex-direction: column;
     }
 }

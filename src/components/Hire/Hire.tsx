@@ -10,7 +10,7 @@ const Hire = () => {
                     Для работы в офисе готов на релокацию в города:<br/>
                     Ростов-на-Дону, Воронеж, Краснодар, Москва
                 </h1>
-                <a href="#" className={cl.button}>Нанять меня</a>
+                <a href="src/components/Hire/Hire#" className={cl.button}>Нанять меня</a>
             </div>
         </section>
     );
