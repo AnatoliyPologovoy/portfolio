@@ -1,10 +1,9 @@
-@value colors: '../root.module.css';
-
-@value background-color-blue from colors;
+@import "../common/sass/variables";
 
 .promo {
     height: calc(85vh - 70px);
-    background-color: background-color-blue;
+    background-color: $background-color;
+    background-image: url("../../assets/background.jpg");
     width: 100%;
 }
 
@@ -18,9 +17,19 @@
 
 }
 
-.text {
-    background-color: chocolate;
+.title {
+    color: $promo-title-color;
+    text-align: start;
     margin-right: 50px;
+    font-family: $font-family-extra;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.name {
+    font-family: $font-family-main;
+    font-size: 65px;
+    margin: 0 0 20px 0;
 }
 
 .photo {
@@ -31,16 +40,23 @@
     object-position: 57%;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 750px) {
 
     .photo {
         width: 200px;
         height: 200px;
+        order: 0;
     }
 
-    .text {
+    .title {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        order: 1;
+    }
+
+    .name {
+        font-size: 45px;
     }
 
     .promoWrapper {
