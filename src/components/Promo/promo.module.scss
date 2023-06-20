@@ -1,9 +1,11 @@
 @import "../common/sass/variables";
 
+
 .promo {
     height: calc(85vh - 70px);
     background-color: $background-color;
     background-image: url("../../assets/background.jpg");
+    background-size: cover;
     width: 100%;
 }
 
@@ -20,7 +22,7 @@
 .title {
     color: $promo-title-color;
     text-align: start;
-    margin-right: 50px;
+    margin-right: 80px;
     font-family: $font-family-extra;
     font-size: 30px;
     font-weight: 600;
@@ -40,7 +42,7 @@
     object-position: 57%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
 
     .photo {
         width: 200px;

@@ -1,0 +1,39 @@
+/*@value colors: '../root.module.css';*/
+/*@value background-color-blue from colors;*/
+@import "../common/sass/mixin";
+@import "../common/sass/variables";
+
+.header {
+  min-height: 70px;
+  background-color: $background-dark;
+}
+
+.headerWrapper {
+  composes: wrapper from '../root.module.css';
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav {
+  width: max-content;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    @include basicText();
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .nav {
+    margin-right: auto;
+    /*width: 100%;*/
+  }
+}
