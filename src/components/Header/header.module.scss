@@ -1,5 +1,3 @@
-/*@value colors: '../root.module.css';*/
-/*@value background-color-blue from colors;*/
 @import "../common/sass/mixin";
 @import "../common/sass/variables";
 
@@ -21,7 +19,7 @@
   flex-wrap: wrap;
 
   a {
-    @include basicText();
+    @include extraText();
     text-decoration: none;
 
     &:not(:last-child) {

@@ -1,10 +1,20 @@
 @import "./variables";
 
-@mixin basicText {
+@mixin extraText {
   color: $basic-text-color;
   font-family: $font-family-extra;
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0;
+  word-wrap: break-word;
+}
+
+@mixin basicText {
+  color: $second-text-color;
+  font-family: $font-family-main;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0;
   word-wrap: break-word;

@@ -1,5 +1,25 @@
 @import "../sass/variables";
 
-.title {
-  font-family: $font-family-main;
+.h1Title {
+  font-family: $font-family-extra;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  word-wrap: break-word;
+  color: $main-title-color;
+}
+
+.h2Title {
+  font-family: $font-family-extra;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  word-wrap: break-word;
+  color: $second-title-color;
 }

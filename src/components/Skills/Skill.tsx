@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
-import cl from './skills.module.css'
+import cl from './skills.module.scss'
+import {Title} from "../common/Title/Title";
 
 export type SkillPropsType = {
     title: string
@@ -11,7 +12,7 @@ const Skill: FC<SkillPropsType> = (props) => {
     return (
         <div className={cl.skillWrapper}>
             <img src={props.img} alt="#" className={cl.pic}/>
-            <h2 className={cl.title}>{props.title}</h2>
+            <Title tag={'h2'}>{props.title}</Title>
             <p className={cl.text}>{props.text}</p>
         </div>
     );
