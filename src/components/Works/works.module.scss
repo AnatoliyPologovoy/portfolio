@@ -1,16 +1,15 @@
-@value colors: '../root.module.css';
-
-@value background-color-blue from colors;
+@import "../common/sass/mixin";
+@import "../common/sass/variables";
 
 .works {
-    background-color: background-color-blue;
+    background-color: $background-dark;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
 }
 
 .mainWrapper {
-    composes: wrapper from '../root.module.css';
+    @include wrapper();
 }
 
 .worksWrapper {
@@ -18,20 +17,15 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.mainTitle {
-    background-color: chocolate;
-
+    padding: 20px 0;
 }
 
 /*work*/
 
 .workWrapper {
     width: 350px;
-    outline: 1px solid black;
+    //outline: 1px solid black;
     margin-bottom: 40px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,6 +38,7 @@
     position: relative;
     overflow: hidden;
     display: block;
+    margin-bottom: 5px;
 }
 
 .picWrapper:hover .pic {
@@ -72,14 +67,30 @@
     object-fit: contain;
     display: block;
     transition: all 0.5s;
+
 }
 
-.title, .text {
-    background-color: chocolate;
-    align-self: flex-start;
+.text {
+    @include basicText();
+    //align-self: flex-start;
     padding: 0 10px 0 10px;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 10px;
+}
+
+//techs
+.techWrapper {
+    display: flex;
+}
+
+.tech {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: $background-gray;
+    @include basicText();
+    &:not(:last-child) {
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 360px) {

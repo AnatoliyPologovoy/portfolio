@@ -1,20 +1,33 @@
-import React from 'react';
-import cl from './works.module.css'
-import workPic1 from '../../assets/keksobooking.png'
+import React, {useContext} from 'react';
+import cl from 'components/Works/works.module.scss'
 import Work from "./Work";
+import {Title} from "components/common/Title/Title";
+import {ContentType} from "app/Content";
+import {MyContext} from "components/MyContextProvider";
 
-const workName1 = 'Keksobooking'
-const workDesc1 = 'Сервис объявлений о сдаче жилья'
-const workLink1 = 'https://anatoliypologovoy.github.io/keksobooking/'
 
 const WorksContainer = () => {
+    const {works} = useContext<ContentType>(MyContext)
+
+    const renderWorks = works.map((w, i) => {
+        return (
+            <Work
+                key={i}
+                title={w.title}
+                img={w.img}
+                text={w.desc}
+                link={w.link}
+                tech={w.techs}
+            />
+        )
+    })
+
     return (
         <section className={cl.works}>
             <div className={cl.mainWrapper}>
-                <h1 className={cl.mainTitle}>Мои работы</h1>
+                <Title tag={'h1'}>My works</Title>
                 <div className={cl.worksWrapper}>
-                    <Work title={workName1} img={workPic1} text={workDesc1} link={workLink1}/>
-                    <Work title={workName1} img={workPic1} text={workDesc1} link={workLink1}/>
+                    {renderWorks}
                 </div>
             </div>
         </section>

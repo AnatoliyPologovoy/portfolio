@@ -19,3 +19,8 @@
   letter-spacing: 0;
   word-wrap: break-word;
 }
+
+@mixin wrapper {
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
