@@ -1,23 +1,25 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import cl from './skills.module.scss'
 import Skill from "./Skill";
-import htmlImg from "../../assets/html.jpeg"
 import {Title} from "../common/Title/Title";
+import {MyContext} from "components/MyContextProvider";
 
-const skillName1 = 'HTML'
-const skillName2 = 'CSS'
-const skillName3 = 'REACT'
-const skillDescription1 = 'Description'
 
 export const SkillsContainer = () => {
+    const {skills} = useContext(MyContext)
+
+    const renderSkills = skills.map((s, i) => {
+        return (
+            <Skill title={s.title} img={s.img} key={i} />
+        )
+    })
+
     return (
         <section className={cl.skills}>
             <div className={cl.mainWrapper}>
                 <Title tag={'h1'}>Skills</Title>
                 <div className={cl.skillsWrapper}>
-                    <Skill title={skillName1} img={htmlImg} text={skillDescription1}/>
-                    <Skill title={skillName1} img={htmlImg} text={skillDescription1}/>
-                    <Skill title={skillName1} img={htmlImg} text={skillDescription1}/>
+                    {renderSkills}
                 </div>
             </div>
         </section>

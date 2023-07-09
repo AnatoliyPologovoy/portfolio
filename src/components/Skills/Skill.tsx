@@ -5,7 +5,7 @@ import {Title} from "../common/Title/Title";
 export type SkillPropsType = {
     title: string
     img: string
-    text: string
+    // text?: string
 }
 
 const Skill: FC<SkillPropsType> = (props) => {
@@ -13,7 +13,7 @@ const Skill: FC<SkillPropsType> = (props) => {
         <div className={cl.skillWrapper}>
             <img src={props.img} alt="#" className={cl.pic}/>
             <Title tag={'h2'}>{props.title}</Title>
-            <p className={cl.text}>{props.text}</p>
+            {/*<p className={cl.text}>{props.text}</p>*/}
         </div>
     );
 };

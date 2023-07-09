@@ -11,9 +11,9 @@ export type WorkPropsType = {
 }
 
 const Work: FC<WorkPropsType> = (props) => {
-    const renderTechs = props.tech.map(t => {
+    const renderTechs = props.tech.map((t, i) => {
         return (
-            <div className={cl.tech}>{t}</div>
+            <div key={i} className={cl.tech}>{t}</div>
         )
     })
 

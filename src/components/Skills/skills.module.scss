@@ -2,8 +2,6 @@
 @import "../common/sass/variables";
 
 .skills {
-    /*height: calc(85vh);*/
-    /*background-color: background-color-blue;*/
     background-color: $background-dark;
     width: 100%;
     padding-top: 50px;
@@ -14,16 +12,10 @@
     @include wrapper();
 }
 
-//.mainTitle {
-//    background-color: chocolate;
-//    text-align: center;
-//    margin-top: 0;
-//    margin-bottom: 30px;
-//}
 
 .skillsWrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px 0;
 }
@@ -40,12 +32,6 @@
 
 }
 
-//.title {
-//    background-color: chocolate;
-//    margin-top: 0;
-//    margin-bottom: 20px;
-//}
-
 .pic {
     width: 70px;
     height: 70px;
@@ -54,7 +40,10 @@
 }
 
 .text {
-    @include basicText()
+    @include basicText();
+    padding: 0 10px 0 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 360px) {
