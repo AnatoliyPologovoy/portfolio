@@ -5,7 +5,6 @@ import {Title} from "components/common/Title/Title";
 import {ContentType} from "app/Content";
 import {MyContext} from "components/MyContextProvider";
 
-
 const WorksContainer = () => {
     const {works} = useContext<ContentType>(MyContext)
 
