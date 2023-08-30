@@ -32,5 +32,4 @@ const WorksContainer = () => {
         </section>
     );
 };
-
 export default WorksContainer;
