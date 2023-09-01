@@ -1,5 +1,5 @@
 import React, {FC, ReactNode} from "react";
-import {content, ContentType} from "app/Content";
+import {content, ContentType} from "app/content";
 
 type MyProviderPropsType = {
 		children: ReactNode

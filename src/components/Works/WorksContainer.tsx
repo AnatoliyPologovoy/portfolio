@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import cl from 'components/Works/works.module.scss'
 import Work from "./Work";
 import {Title} from "components/common/Title/Title";
-import {ContentType} from "app/Content";
+import {ContentType} from "app/content";
 import {MyContext} from "components/MyContextProvider";
 
 const WorksContainer = () => {

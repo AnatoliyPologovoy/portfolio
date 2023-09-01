@@ -8,7 +8,7 @@ import Hire from "./components/Hire/Hire";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
 import {MyProvider} from "components/MyContextProvider";
-import {content} from "app/Content";
+import {content} from "app/content";
 
 function App() {
 		return (

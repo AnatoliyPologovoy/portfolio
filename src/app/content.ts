@@ -13,6 +13,8 @@ import Mui from 'assets/logo/colors/mui.png'
 import Jest from 'assets/logo/colors/jest.png'
 import Storybook from 'assets/logo/colors/storybook.png'
 import Git from 'assets/logo/colors/git.png'
+import SocialNetwork from 'assets/social-network.png'
+import todoList from 'assets/todo-list.png'
 
 
 export type WorkType = {
@@ -48,6 +50,20 @@ export const content: ContentType  = {
 						link: 'https://anatoliypologovoy.github.io/Cat-energy/',
 						techs: ['LESS','Adaptive Layout','Gulp' ],
 						img: catEnergy
+				},
+				{
+						title: 'InHeat',
+						desc: 'Social network',
+						link: 'https://anatoliypologovoy.github.io/social-network/',
+						techs: ['TS', 'React', 'Redux', 'Thunk'],
+						img: SocialNetwork
+				},
+				{
+						title: 'TodoList',
+						desc: 'List of tasks',
+						link: 'https://anatoliypologovoy.github.io/todolist/',
+						techs: ['TS', 'React', 'Redux Toolkit', 'Thunk'],
+						img: todoList
 				}
 		],
 		skills: [
