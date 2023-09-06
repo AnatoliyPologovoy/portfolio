@@ -64,6 +64,13 @@ export const content: ContentType  = {
 						link: 'https://anatoliypologovoy.github.io/todolist/',
 						techs: ['TS', 'React', 'Redux Toolkit', 'Thunk'],
 						img: todoList
+				},
+				{
+						title: 'Cards',
+						desc: 'Flash cards for study',
+						link: '#',
+						techs: ['TS', 'React', 'Redux Toolkit', 'Thunk'],
+						img: todoList
 				}
 		],
 		skills: [
